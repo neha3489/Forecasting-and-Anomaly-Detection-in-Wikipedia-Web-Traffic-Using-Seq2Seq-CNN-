@@ -14,13 +14,13 @@ This project focuses on forecasting Wikipedia web traffic data and detecting ano
 
 ## 🤖 Models Used
 ### Seq2Seq CNN
-- Uses causal convolutions and an encoder-decoder architecture.
-- Captures both short-term and long-term dependencies in sequential data.
+-Employs causal convolutions to model temporal dependencies without allowing information leakage from future time steps.
+-Learns encoder-decoder representations that handle varying sequence lengths and generate stable multi-step predictions for time series data.
+
 
 ### N-BEATS (PyTorch)
-- Fully connected deep architecture for time series forecasting.
-- Decomposes signals into trend and seasonal components.
-- Quantile variant used to estimate uncertainty in predictions.
+-A deep fully-connected architecture designed specifically for time series forecasting, implemented using PyTorch.
+-Decomposes the input signal into trend and seasonal components, making it robust and interpretable for both short- and long-term forecasts.
 
 ---
 
@@ -35,11 +35,9 @@ Anomaly Detection: Residual-based (σ and MAD thresholds) — top-10 anomalous s
 ---
 
 ## 🧩 Conclusion
-- Both models captured key time dependencies and seasonal patterns.
-- Seq2Seq CNN (reference) achieved stronger accuracy.
-- N-BEATS showed robust generalization but needs hyperparameter tuning.
-- Future work: Larger dataset, attention mechanisms, hybrid ensemble models.
-
+The Seq2Seq Causal CNN model achieved a Test SMAPE of 40.52, outperforming the previously reported best value of 42.37 from the paper. We have also used N-BEATS (PyTorch) model, which recorded a SMAPE of around 120. This demonstrates that the Seq2Seq CNN architecture captures temporal dependencies and seasonal patterns more effectively, making it highly suitable for time series forecasting and anomaly detection on the Wikipedia web traffic dataset.
+The model shows strong generalization across diverse page categories, maintaining stability even with irregular traffic patterns.
+Future work will focus on utilizing a larger dataset and exploring attention mechanisms and hybrid ensemble models to further improve forecasting performance.
 ---
 
 ## 🧰 Requirements
