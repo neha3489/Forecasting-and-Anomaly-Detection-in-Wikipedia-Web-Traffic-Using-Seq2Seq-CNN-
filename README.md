@@ -39,8 +39,3 @@ The Seq2Seq Causal CNN model achieved a Test SMAPE of 40.52, outperforming the p
 The model shows strong generalization across diverse page categories, maintaining stability even with irregular traffic patterns.
 Future work will focus on utilizing a larger dataset and exploring attention mechanisms and hybrid ensemble models to further improve forecasting performance.
 ---
-
-## 🧰 Requirements
-Install the dependencies:
-```bash
-pip install torch pytorch-lightning pandas numpy matplotlib scikit-learn
