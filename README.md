@@ -28,7 +28,7 @@ This project focuses on forecasting Wikipedia web traffic data and detecting ano
 
 | Model | Test SMAPE |
 |--------|--------------|
-| Seq2Seq CNN | **42.37** |
+| Seq2Seq CNN | **40.519** |
 | N-BEATS | 120.30 |
 
 Anomaly Detection: Residual-based (σ and MAD thresholds) — top-10 anomalous series identified.
