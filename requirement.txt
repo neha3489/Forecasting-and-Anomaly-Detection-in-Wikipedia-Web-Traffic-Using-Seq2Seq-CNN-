@@ -1,0 +1,4 @@
+## 🧰 Requirements
+Install the dependencies:
+```bash
+pip install torch pytorch-lightning pandas numpy matplotlib scikit-learn
